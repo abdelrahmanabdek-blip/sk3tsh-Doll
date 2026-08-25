@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SK3TCH DOLL — Gallery</title>
+  <meta name="description" content="Browse Sandra's digital art, sketches and personal work.">
+
+  <link rel="shortcut icon" href="images/icon.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="them.css">
+</head>
+
+<body data-page="gallery" class="page">
+
+  <div id="app-header"></div>
+
+  <main>
+    <section class="page-hero reveal">
+      <h1>✨ Gallery ✨</h1>
+      <p>a little bit of everything I've drawn</p>
+    </section>
+
+    <div class="filter-tabs" role="tablist" aria-label="Filter gallery by category">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="digital">Digital Art</button>
+      <button data-filter="sketch">Sketches</button>
+      <button data-filter="personal">Personal</button>
+    </div>
+
+    <!--
+      NOTE: these are placeholder tiles — no artwork files were provided for the
+      gallery yet. Swap each <img> style block for a real <img src="images/...">
+      once the pieces are ready; the data-category attribute drives the filter.
+    -->
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item reveal" data-category="digital"><span>Digital Art<br>placeholder 1</span></div>
+      <div class="gallery-item reveal" data-category="sketch"><span>Sketch<br>placeholder 2</span></div>
+      <div class="gallery-item reveal" data-category="digital"><span>Digital Art<br>placeholder 3</span></div>
+      <div class="gallery-item reveal" data-category="sketch"><span>Sketch<br>placeholder 4</span></div>
+      <div class="gallery-item reveal" data-category="personal"><span>Personal<br>placeholder 5</span></div>
+      <div class="gallery-item reveal" data-category="digital"><span>Digital Art<br>placeholder 6</span></div>
+      <div class="gallery-item reveal" data-category="personal"><span>Personal<br>placeholder 7</span></div>
+      <div class="gallery-item reveal" data-category="sketch"><span>Sketch<br>placeholder 8</span></div>
+      <div class="gallery-item reveal hidden" data-category="digital"><span>Digital Art<br>placeholder 9</span></div>
+      <div class="gallery-item reveal hidden" data-category="personal"><span>Personal<br>placeholder 10</span></div>
+      <div class="gallery-item reveal hidden" data-category="sketch"><span>Sketch<br>placeholder 11</span></div>
+      <div class="gallery-item reveal hidden" data-category="digital"><span>Digital Art<br>placeholder 12</span></div>
+    </div>
+
+    <div class="load-more-wrap">
+      <button class="btn btn-primary" id="loadMoreBtn">Load More ♡</button>
+    </div>
+  </main>
+
+  <div id="app-footer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
